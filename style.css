@@ -1,0 +1,160 @@
+@font-face {
+  font-family: Inter;
+  src: url(./assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+  font-family: Inter, arial;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background: rgb(30, 30, 30);
+  margin: 15px 15px 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.header-left {
+  margin-right: 40px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.header-left h3 {
+  color: #474dff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.header-right img {
+  width: 100%;
+}
+
+.infos {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background: rgb(15, 15, 15);
+  margin: 0 5px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.infos h3 {
+  font-size: 1.3rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  margin: 10px 0 0;
+}
+
+.btn-container button {
+  width: 140px;
+  height: 40px;
+  background: #474dff;
+  border-radius: 10px;
+  border: none;
+  margin: auto 7px;
+  font-weight: 700;
+}
+
+.infos-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.investors {
+  margin: auto 0;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-container img {
+  width: 5vw;
+}
+
+@media screen and (max-width: 750px) {
+  nav ul {
+    width: 70vw;
+    margin-left: 10px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-left-container {
+    margin: 30px 0;
+  }
+
+  .header-right {
+    display: flex;
+  }
+
+  .header-right img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-container {
+    align-items: center;
+  }
+
+  .infos-right h3 {
+    margin: 20px auto;
+  }
+
+  .img-container {
+    width: 90vw;
+  }
+
+  .img-container img {
+    width: 15vw;
+  }
+}
